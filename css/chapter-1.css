@@ -2,3 +2,16 @@
 .updatedContent{
     border: 2px solid blueviolet;
 }
+
+.selectedParagraph{
+    border: 2px solid red;
+    background-color: yellow;
+}
+
+.success{
+    border : 2px solid blue;
+}
+
+.fail{
+    border : 2px solid red;
+}
