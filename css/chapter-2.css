@@ -1,0 +1,13 @@
+
+.selected{
+    border: 2px solid cornflowerblue !important;
+    font-weight: bold;
+}
+
+.container > div{
+    margin-top: 50px;
+}
+
+.hidden{
+    display: none !important;
+}

@@ -10,9 +10,9 @@ $(document).ready(function () {
                     .css({border : '2px solid blue', color: 'white', backgroundColor : 'blue'}));
         }else {
             context.append(
-                $resultEl.append($(document.createElement('p'))
+                $(document.createElement('p'))
                     .text('Assertion Fail')
-                    .css({border: '2px solid red',color: 'white', backgroundColor : 'red'})));
+                    .css({border: '2px solid red',color: 'white', backgroundColor : 'red'}));
         }
     }
 

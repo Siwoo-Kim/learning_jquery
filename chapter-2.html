@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter-2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css"> <!--for auto-completion-->
+    <link rel="stylesheet" href="css/chapter-2.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container" style="margin-bottom: 200px">
+    <div class="col-12"><h1>Chapter 2: Selecting elements</h1></div>
+
+    <div id="c21">
+        <h3>Direct Child Selector</h3>
+        <a href="/category" class="btn btn-primary">Category</a>
+        <nav class="nav flex-column">
+            <a href="#anchor1" class="nav-link" >Anchor 1</a>
+            <a href="#anchor2" class="nav-link" >Anchor 2</a>
+            <span class="nav-link"><a href="#anchor3">Anchor 3</a></span>
+        </nav>
+        <div class="result"></div>
+    </div>
+
+    <div id="c22">
+        <h3>Direct Sibling Selector</h3>
+        <nav class="nav">
+            <a href="#" class="nav-link">Anchor 1</a>
+            <a href="#" class="nav-link">Anchor 2</a>
+            <a href="#" class="nav-link">Anchor 3</a>
+        </nav>
+        <ul class="list-group">
+            <li class="list-group-item">First Item</li>
+            <li class="list-group-item">Second Item</li>
+            <li class="list-group-item">Third Item</li>
+            <li class="list-group-item">Fourth Item</li>
+            <li class="list-group-item">Fifth Item</li>
+        </ul>
+        <div class="result"></div>
+    </div>
+
+    <div id="c23">
+        <h4>Index Selector</h4>
+        <ul class="nav nav-tabs">
+            <li href="#" class="nav-item">
+                <a href="#" class="nav-link">Anchor 1</a>
+            </li>
+            <li href="#" class="nav-item">
+                <a href="#" class="nav-link">Anchor 2</a>
+            </li>
+            <li href="#" class="nav-item">
+                <a href="#" class="nav-link">Anchor 3</a>
+            </li>
+        </ul>
+        <table class="table">
+            <tr>
+                <td>0</td> <td>even</td>
+            </tr>
+            <tr>
+                <td>1</td> <td>odd</td>
+            </tr>
+            <tr>
+                <td>2</td> <td>even</td>
+            </tr>
+            <tr>
+                <td>3</td> <td>odd</td>
+            </tr>
+        </table>
+        <div class="result"></div>
+    </div>
+
+    <div id="c24" >
+        <h3>Animated Selector</h3>
+        <div class="btn-toolbar" role="toolbar" >
+            <div class="btn-group" role="group" >
+                <button type="button" class="btn btn-secondary">0</button>
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+            </div>
+        </div>
+        <div class="result"></div>
+    </div>
+
+    <div id="c25">
+        <h3>Has(element) and Contains(text) Selector</h3>
+        <ul class="list-group">
+            <li class="list-group-item"><span>1</span></li>
+            <li class="list-group-item">2</li>
+            <li class="list-group-item">3</li>
+            <li class="list-group-item">4</li>
+        </ul>
+
+        <div class="result"></div>
+    </div>
+
+    <div id="c26">
+        <h3>Not selector</h3>
+        <div class="btn-toolbar" role="toolbar">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+            </div>
+        </div>
+        <div class="result"></div>
+    </div>
+
+    <div id="c27">
+        <h3>Visible and Hidden</h3>
+        <div class="btn-toolbar" role="toolbar">
+            <div class="btn-group" role="group">
+                <button class="btn btn-primary">1</button>
+                <button class="btn btn-primary hidden">2</button>
+            </div>
+        </div>
+        <div class="result"></div>
+    </div>
+
+    <div id="c28">
+        <h3>Select elements by attribute</h3>
+        <div class="list-group">
+            <li class="list-group-item">
+                <a class="btn btn-secondary">Anchor 1</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#" class="btn btn-secondary">Anchor 2</a>
+            </li>
+            <li class="list-group-item">
+                <button disabled class="btn btn-secondary">Anchor 3</button>
+            </li>
+        </div>
+        <div class="result"></div>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<!--application javascript-->
+<script src="js/assert.js"></script>
+<script src="js/chapter-2.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
